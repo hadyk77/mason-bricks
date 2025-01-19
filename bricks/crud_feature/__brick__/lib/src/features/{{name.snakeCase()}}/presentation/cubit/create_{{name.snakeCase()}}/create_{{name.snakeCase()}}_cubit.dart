@@ -1,0 +1,28 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/usecases/add_{{name.snakeCase()}}_usecase.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/usecases/update_{{name.snakeCase()}}_usecase.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart';
+import 'package:{{project}}/src/core/exceptions/failure.dart';
+
+import 'package:dartz/dartz.dart';
+
+part 'create_{{name.snakeCase()}}_state.dart';
+
+class Create{{name.pascalCase()}}Cubit extends Cubit<Create{{name.pascalCase()}}State> {
+  Create{{name.pascalCase()}}Cubit(this.add{{name.pascalCase()}}Usecase, this.update{{name.pascalCase()}}Usecase,) : super(const Create{{name.pascalCase()}}State());
+
+  final Add{{name.pascalCase()}}Usecase add{{name.pascalCase()}}Usecase;
+  final Update{{name.pascalCase()}}Usecase update{{name.pascalCase()}}Usecase;
+   Create{{name.pascalCase()}}Params params=Create{{name.pascalCase()}}Params();
+
+  Future<void> submit()async{
+    emit(Create{{name.pascalCase()}}Loading());
+    late Option<Failure> result;
+    if(params.id==null){
+      result=await add{{name.pascalCase()}}Usecase.call(params);
+    }else{
+      result=await update{{name.pascalCase()}}Usecase.call(params.id!,params);
+    }
+    result.fold(()=>emit(Create{{name.pascalCase()}}Success()), (failure) => emit(Create{{name.pascalCase()}}Failure(failure)));
+  }
+}
