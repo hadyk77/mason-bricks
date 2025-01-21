@@ -1,4 +1,3 @@
-import 'package:injectable/injectable.dart';
 import '../../../../core/services/network_service.dart';
 import '../models/{{name.snakeCase()}}_model.dart';
 import '../models/create_{{name.snakeCase()}}_params_model.dart';

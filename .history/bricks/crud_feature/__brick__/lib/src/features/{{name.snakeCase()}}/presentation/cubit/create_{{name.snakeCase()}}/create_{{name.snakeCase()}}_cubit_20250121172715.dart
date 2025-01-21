@@ -8,7 +8,6 @@ import 'package:dartz/dartz.dart';
 
 part 'create_{{name.snakeCase()}}_state.dart';
 
-@injectable
 class Create{{name.pascalCase()}}Cubit extends Cubit<Create{{name.pascalCase()}}State> {
   Create{{name.pascalCase()}}Cubit(this.add{{name.pascalCase()}}Usecase, this.update{{name.pascalCase()}}Usecase,) : super(const Create{{name.pascalCase()}}State());
 

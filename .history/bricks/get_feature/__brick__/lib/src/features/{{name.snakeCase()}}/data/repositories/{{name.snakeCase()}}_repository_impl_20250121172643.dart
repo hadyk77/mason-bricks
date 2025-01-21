@@ -8,7 +8,7 @@ import "../../domain/entities/{{name.snakeCase()}}_entity.dart";
 
 import '../../../../core/helper/dartz_handler.dart';
 
-@Injectable(as: {{name.pascalCase()}}Repository)
+
 class {{name.pascalCase()}}RepositoryImpl extends {{name.pascalCase()}}Repository with DartzHandler {
   final {{name.pascalCase()}}Datasource datasource;
 

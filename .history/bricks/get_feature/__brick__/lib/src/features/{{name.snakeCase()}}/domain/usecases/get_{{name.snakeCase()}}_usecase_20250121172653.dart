@@ -1,10 +1,8 @@
-import 'package:injectable/injectable.dart';
-import 'package:dartz/dartz.dart';
 import '../../../../core/exceptions/failure.dart';
-import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';
+import 'package:dartz/dartz.dart';
 import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
-
-@injectable
+import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';
+import 'package:injectable/injectable.dart';
 class Get{{name.pascalCase()}}Usecase {
   final {{name.pascalCase()}}Repository repository;
 

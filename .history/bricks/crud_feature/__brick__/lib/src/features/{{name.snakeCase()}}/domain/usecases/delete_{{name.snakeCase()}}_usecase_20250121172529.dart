@@ -1,4 +1,4 @@
-import 'package:injectable/injectable.dart';
+
 import 'package:dartz/dartz.dart';
 import '../../../../core/exceptions/failure.dart';
 import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';

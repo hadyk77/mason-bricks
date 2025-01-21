@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import '../../../../core/exceptions/failure.dart';
 import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';
 import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
-@injectable
+
 class GetSingle{{name.pascalCase()}}Usecase{
   final {{name.pascalCase()}}Repository repository;
 
