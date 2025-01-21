@@ -2,13 +2,13 @@ import 'package:injectable/injectable.dart';
 import '../../../../core/exceptions/failure.dart';
 import '../../../../core/helper/dartz_handler.dart';
 import '../../domain/repositories/{{name.snakeCase()}}s_repository.dart';
-import '../datasources/{{name.snakeCase()}}s_datasource.dart';
+import '../datasources/{{name.snakeCase()}}_datasource.dart';
 import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
 import '../../domain/entities/create_{{name.snakeCase()}}_params.dart';
 import '../models/create_{{name.snakeCase()}}_params_model.dart';
 import 'package:dartz/dartz.dart';
-@Injectable(as: {{name.pascalCase()}}sRepository)
-class {{name.pascalCase()}}sRepositoryImpl extends {{name.pascalCase()}}sRepository with DartzHandler {
+@Injectable(as: {{name.pascalCase()}}Repository)
+class {{name.pascalCase()}}RepositoryImpl extends {{name.pascalCase()}}sRepository with DartzHandler {
   final {{name.pascalCase()}}sDatasource datasource;
 
   {{name.pascalCase()}}RepositoryImpl(this.datasource);

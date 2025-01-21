@@ -6,7 +6,7 @@ import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
 
 @injectable
 class Get{{name.pascalCase()}}sUsecase {
-  final {{name.pascalCase()}}Repository repository;
+  final {{name.pascalCase()}}sRepository repository;
 
   Get{{name.pascalCase()}}sUsecase(this.repository);
   

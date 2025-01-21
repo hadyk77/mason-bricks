@@ -2,7 +2,7 @@ import 'package:injectable/injectable.dart';
 import '../../../../core/services/network_service.dart';
 import '../models/{{name.snakeCase()}}_model.dart';
 import '../models/create_{{name.snakeCase()}}_params_model.dart';
-abstract class {{name.pascalCase()}}sDatasource {
+abstract class {{name.pascalCase()}}Datasource {
 
   {{#pagination}}
   Future<List<{{name.pascalCase()}}Model>> get{{name.pascalCase()}}(int page);
@@ -23,7 +23,7 @@ abstract class {{name.pascalCase()}}sDatasource {
 }
 
 @Injectable(as: {{name.pascalCase()}}Datasources)
-class {{name.pascalCase()}}sDatasourceImpl implements {{name.pascalCase()}}sDatasource {
+class {{name.pascalCase()}}DatasourceImpl implements {{name.pascalCase()}}Datasource {
   final NetworkService networkService;
 
   {{name.pascalCase()}}DatasourceImpl(this.networkService);

@@ -3,7 +3,7 @@ import '../entities/create_{{name.snakeCase()}}_params.dart';
 import '../../../../core/exceptions/failure.dart';
 import 'package:dartz/dartz.dart';
 
-abstract class {{name.pascalCase()}}sRepository {
+abstract class {{name.pascalCase()}}Repository {
   {{#pagination}}
   Future<Either<Failure, List<{{name.pascalCase()}}Entity>>> get{{name.pascalCase()}}(int page);
   {{/pagination}}
