@@ -47,3 +47,8 @@ vars:
 
     
 
+  project:
+    type: string
+    description: Project name
+    default: "client"
+    prompt: What is your project name?
