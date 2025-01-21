@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 class {{name.pascalCase()}}Entity extends Equatable {
-  final int id;
+  final String id;
   final String name;
 
   {{name.pascalCase()}}Entity({required this.id, required this.name});
