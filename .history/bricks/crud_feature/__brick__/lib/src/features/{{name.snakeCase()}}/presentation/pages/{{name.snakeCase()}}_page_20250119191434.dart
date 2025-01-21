@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../core/widgets/my_scaffold.dart';
+import 'package:{{project}}/src/core/widgets/my_scaffold.dart';
 class {{name.pascalCase()}}Page extends StatefulWidget {
   const {{name.pascalCase()}}Page({super.key});
 
