@@ -1,4 +1,4 @@
-import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart';
+import 'package:<>/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart';
 
 class Create{{name.pascalCase()}}ParamsModel extends Create{{name.pascalCase()}}Params{
 

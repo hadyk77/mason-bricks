@@ -6,7 +6,7 @@ import 'package:{{project}}/src/features/{{name.snakeCase()}}/data/datasources/{
 import "package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}_entity.dart";
 import "package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart";
 import "package:{{project}}/src/features/{{name.snakeCase()}}/data/models/create_{{name.snakeCase()}}_params_model.dart";
-import 'package:{{project}}/src/core/helper/dartz_handler.dart';
+import 'package:client/src/core/helper/dartz_handler.dart';
 
 
 class {{name.pascalCase()}}RepositoryImpl extends {{name.pascalCase()}}Repository with DartzHandler {

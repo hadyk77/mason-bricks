@@ -1,7 +1,7 @@
 
-import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/repositories/{{name.snakeCase()}}_repository.dart';
+import 'package:client/src/features/{{name.snakeCase()}}/domain/repositories/{{name.snakeCase()}}_repository.dart';
 import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart';
-import 'package:{{project}}/src/core/exceptions/failure.dart';
+import 'package:client/src/core/exceptions/failure.dart';
 import 'package:dartz/dartz.dart';
 class Add{{name.pascalCase()}}Usecase{
 
