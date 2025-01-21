@@ -7,9 +7,9 @@ part '{{name.snakeCase()}}s_state.dart';
 
 @injectable
 class {{name.pascalCase()}}sCubit extends Cubit<{{name.pascalCase()}}sState> {
-  {{name.pascalCase()}}sCubit(this.get{{name.pascalCase()}}sUsecase) : super(const {{name.pascalCase()}}sState());
+  {{name.pascalCase()}}sCubit(this.get{{name.pascalCase()}}Usecase) : super(const {{name.pascalCase()}}sState());
 
-  final Get{{name.pascalCase()}}sUsecase get{{name.pascalCase()}}sUsecase;
+  final Get{{name.pascalCase()}}sUsecase get{{name.pascalCase()}}Usecase;
   List<{{name.pascalCase()}}Entity> {{name.snakeCase()}} = [];
 
   {{#pagination}}
