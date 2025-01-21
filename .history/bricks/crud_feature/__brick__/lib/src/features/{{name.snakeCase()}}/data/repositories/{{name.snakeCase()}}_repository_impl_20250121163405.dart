@@ -1,5 +1,5 @@
-import '../../../../core/exceptions/failure.dart';
-import '../../../../core/helper/dartz_handler.dart';
+import '../../../../../core/exceptions/failure.dart';
+import '../../../core/helper/dartz_handler.dart';
 import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';
 import '../datasources/{{name.snakeCase()}}_datasource.dart';
 import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
