@@ -38,17 +38,17 @@ class {{name.pascalCase()}}sCubit extends Cubit<{{name.pascalCase()}}sState> {
     {{^pagination}}
     final result = await get{{name.pascalCase()}}sUsecase.call();
     {{/pagination}}
-    result.fold((failure) => emit({{name.pascalCase()}}sFailure(failure)), (data){
+    result.fold((failure) => emit({{name.pascalCase()}}Failure(failure)), (data){
 
       {{#pagination}}
-       {{name.snakeCase()}}s.addAll(data);
+       {{name.snakeCase()}}.addAll(data);
        hasMore=data.isNotEmpty;
        page++;
       {{/pagination}}
       {{^pagination}}
-      {{name.snakeCase()}}s = data;
+      {{name.snakeCase()}} = data;
       {{/pagination}}
-      emit({{name.pascalCase()}}sSuccess(data));
+      emit({{name.pascalCase()}}Success(data));
     } ,);
   }
 }

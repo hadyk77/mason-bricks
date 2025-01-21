@@ -17,7 +17,7 @@ class {{name.pascalCase()}}sCubit extends Cubit<{{name.pascalCase()}}sState> {
   bool hasMore = true;
   {{/pagination}}
 
-  Future<void> get{{name.pascalCase()}}s(
+  Future<void> get{{name.pascalCase()}}(
    {{#pagination}}
    {bool forceRefresh=false}
    {{/pagination}}
@@ -31,24 +31,24 @@ class {{name.pascalCase()}}sCubit extends Cubit<{{name.pascalCase()}}sState> {
       {{name.snakeCase()}}=[];
     }
     {{/pagination}}
-    emit( {{name.pascalCase()}}sLoading());
+    emit( {{name.pascalCase()}}Loading());
     {{#pagination}}
-    final result = await get{{name.pascalCase()}}sUsecase.call(page);
+    final result = await get{{name.pascalCase()}}Usecase.call(page);
     {{/pagination}}
     {{^pagination}}
-    final result = await get{{name.pascalCase()}}sUsecase.call();
+    final result = await get{{name.pascalCase()}}Usecase.call();
     {{/pagination}}
-    result.fold((failure) => emit({{name.pascalCase()}}sFailure(failure)), (data){
+    result.fold((failure) => emit({{name.pascalCase()}}Failure(failure)), (data){
 
       {{#pagination}}
-       {{name.snakeCase()}}s.addAll(data);
+       {{name.snakeCase()}}.addAll(data);
        hasMore=data.isNotEmpty;
        page++;
       {{/pagination}}
       {{^pagination}}
-      {{name.snakeCase()}}s = data;
+      {{name.snakeCase()}} = data;
       {{/pagination}}
-      emit({{name.pascalCase()}}sSuccess(data));
+      emit({{name.pascalCase()}}Success(data));
     } ,);
   }
 }
