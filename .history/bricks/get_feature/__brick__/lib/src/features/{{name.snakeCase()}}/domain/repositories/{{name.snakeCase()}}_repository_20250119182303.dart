@@ -1,5 +1,5 @@
-import '../../../../core/exceptions/failure.dart';
-import "../../domain/entities/{{name.snakeCase()}}_entity.dart";
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}_entity.dart';
+import 'package:{{project}}/src/core/exceptions/failure.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class {{name.pascalCase()}}Repository {

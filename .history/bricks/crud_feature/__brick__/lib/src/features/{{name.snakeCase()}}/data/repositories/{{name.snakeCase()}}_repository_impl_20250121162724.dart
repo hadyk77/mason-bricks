@@ -1,11 +1,13 @@
-import '../../../core/exceptions/failure.dart';
-import '../../../core/helper/dartz_handler.dart';
-import '../../domain/repositories/{{name.snakeCase()}}_repository.dart';
-import '../datasources/{{name.snakeCase()}}_datasource.dart';
-import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
-import '../../domain/entities/create_{{name.snakeCase()}}_params.dart';
-import '../models/create_{{name.snakeCase()}}_params_model.dart';
+import 'package:{{project}}/src/core/exceptions/failure.dart';
+
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/repositories/{{name.snakeCase()}}_repository.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/data/datasources/{{name.snakeCase()}}_datasource.dart';
+import "package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}_entity.dart";
+import "package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart";
+import "package:{{project}}/src/features/{{name.snakeCase()}}/data/models/create_{{name.snakeCase()}}_params_model.dart";
+import 'package:{{project}}/src/core/helper/dartz_handler.dart';
 import 'package:dartz/dartz.dart';
+
 
 class {{name.pascalCase()}}RepositoryImpl extends {{name.pascalCase()}}Repository with DartzHandler {
   final {{name.pascalCase()}}Datasource datasource;

@@ -1,6 +1,6 @@
-import '../../../../core/services/network_service.dart';
-import '../models/{{name.snakeCase()}}_model.dart';
-import '../models/create_{{name.snakeCase()}}_params_model.dart';
+import 'package:{{project}}/src/core/services/network_service.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/data/models/{{name.snakeCase()}}_model.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/data/models/create_{{name.snakeCase()}}_params_model.dart';
 abstract class {{name.pascalCase()}}Datasource {
 
   {{#pagination}}

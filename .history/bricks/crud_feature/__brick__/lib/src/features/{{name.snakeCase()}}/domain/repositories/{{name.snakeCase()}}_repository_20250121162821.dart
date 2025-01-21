@@ -1,6 +1,7 @@
-import '../entities/{{name.snakeCase()}}_entity.dart';
-import '../entities/create_{{name.snakeCase()}}_params.dart';
-import '../../../../core/exceptions/failure.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/{{name.snakeCase()}}_entity.dart';
+
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/entities/create_{{name.snakeCase()}}_params.dart';
+import 'package:{{project}}/src/core/exceptions/failure.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class {{name.pascalCase()}}Repository {

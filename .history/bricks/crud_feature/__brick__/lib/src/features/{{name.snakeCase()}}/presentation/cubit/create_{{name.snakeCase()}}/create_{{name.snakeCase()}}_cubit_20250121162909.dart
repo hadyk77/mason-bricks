@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../domain/usecases/add_{{name.snakeCase()}}_usecase.dart';
-import '../../domain/usecases/update_{{name.snakeCase()}}_usecase.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/usecases/add_{{name.snakeCase()}}_usecase.dart';
+import 'package:{{project}}/src/features/{{name.snakeCase()}}/domain/usecases/update_{{name.snakeCase()}}_usecase.dart';
 import '../../domain/entities/create_{{name.snakeCase()}}_params.dart';
 import '../../../../core/exceptions/failure.dart';
 
