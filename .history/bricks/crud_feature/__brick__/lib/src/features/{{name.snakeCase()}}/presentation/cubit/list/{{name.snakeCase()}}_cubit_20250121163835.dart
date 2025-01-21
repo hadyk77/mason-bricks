@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/exceptions/failure.dart';
-import '../../../domain/usecases/get_{{name.snakeCase()}}_usecase.dart';
-import '../../../domain/entities/{{name.snakeCase()}}_entity.dart';
+import '../../domain/usecases/get_{{name.snakeCase()}}_usecase.dart';
+import '../../domain/entities/{{name.snakeCase()}}_entity.dart';
 
 part '{{name.snakeCase()}}_state.dart';
 
