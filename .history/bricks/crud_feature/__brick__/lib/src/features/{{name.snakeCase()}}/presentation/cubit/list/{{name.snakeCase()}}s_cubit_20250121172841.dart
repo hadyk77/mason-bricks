@@ -9,7 +9,7 @@ part '{{name.snakeCase()}}s_state.dart';
 class {{name.pascalCase()}}sCubit extends Cubit<{{name.pascalCase()}}State> {
   {{name.pascalCase()}}Cubit(this.get{{name.pascalCase()}}Usecase) : super(const {{name.pascalCase()}}State());
 
-  final Get{{name.pascalCase()}}sUsecase get{{name.pascalCase()}}Usecase;
+  final Get{{name.pascalCase()}}Usecase get{{name.pascalCase()}}Usecase;
   List<{{name.pascalCase()}}Entity> {{name.snakeCase()}} = [];
 
   {{#pagination}}
