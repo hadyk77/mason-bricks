@@ -10,7 +10,7 @@ class {{name.pascalCase()}}sCubit extends Cubit<{{name.pascalCase()}}sState> {
   {{name.pascalCase()}}sCubit(this.get{{name.pascalCase()}}sUsecase) : super( {{name.pascalCase()}}sState());
 
   final Get{{name.pascalCase()}}sUsecase get{{name.pascalCase()}}sUsecase;
-  List<{{name.pascalCase()}}Entity> {{name.snakeCase()}}s = [];
+  List<{{name.pascalCase()}}Entity> {{name.snakeCase()}} = [];
 
   {{#pagination}}
   int page = 1;
